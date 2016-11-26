@@ -1,0 +1,9 @@
+##Atores:
+##None
+
+$Instruções:
+A - Pular
+X - Interagir
+Analógico Direito - Controle da Roda de Cores
+
+$--endDialog

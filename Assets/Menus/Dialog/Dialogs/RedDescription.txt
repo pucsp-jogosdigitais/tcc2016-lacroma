@@ -1,0 +1,10 @@
+##Atores:
+##Prism
+
+
+$--enterCenter.Prism
+$>>Prism.emote.red
+$Vermelho - Força
+O poder do vermelho revigora os músculos, te permitindo pular mais alto
+
+$--endDialog

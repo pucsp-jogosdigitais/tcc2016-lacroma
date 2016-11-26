@@ -1,0 +1,10 @@
+##Atores:
+##Prism
+
+
+$--enterCenter.Prism
+$>>Prism.emote.yellow
+$Amarelo - Agilidade
+O poder do amarelo anima a mente e o corpo, te permitindo correr mais rápido
+
+$--endDialog

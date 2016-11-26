@@ -1,0 +1,48 @@
+## Atores:
+##	Iris
+
+--enterLeft.Iris
+
+--speak.Iris
+
+Meu deus!
+
+>>Iris.lookLeft
+--trigger.shake
+
+Wow!
+O que foi isso...?
+
+--enterRight.Matiz
+--speak.Matiz
+
+Olá milady!
+
+>>Iris.lookRight
+--speak.Iris
+
+Mas o que...?
+
+>>Matiz.emote.dramatic
+--speak.Matiz
+
+Que decepção... você não me reconhece...?
+
+--speak.Iris
+
+Não seja dramático, estou falando do terremoto.
+
+--speak.Matiz
+>>Matiz.emote.joyful
+
+Estava só fazendo um teatrinho. Você sabe como eu sou.
+
+>>Matiz.emote.standard
+Olha!
+
+--speak.Iris
+Era isso!
+>>Iris.emote.joyful
+Isso é demais!
+
+--endDialog

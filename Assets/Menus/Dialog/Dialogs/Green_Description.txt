@@ -1,0 +1,10 @@
+##Atores:
+##Prism
+
+
+$--enterCenter.Prism
+$>>Prism.emote.green
+$Verde - Percepção
+O poder do verde aguça os sentidos permitindo perceber passagens secretas e objetos escondidos
+
+$--endDialog

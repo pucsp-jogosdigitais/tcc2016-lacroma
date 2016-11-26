@@ -1,0 +1,10 @@
+##Atores:
+##Prism
+
+
+$--enterCenter.Prism
+$>>Prism.emote.blue
+$Azul - Leveza
+O poder do azul tira o peso de seus ombros e permite cair com mais controle
+
+$--endDialog

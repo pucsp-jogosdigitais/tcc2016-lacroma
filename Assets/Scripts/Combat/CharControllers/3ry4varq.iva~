@@ -1,0 +1,165 @@
+﻿using UnityEngine;
+using System.Collections;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class PlayerCombatController : CombatCharacterController
+{
+    float lastFrameDirection;
+    int currentlySelected;
+    bool expandedMenu = false;
+    int currentlySelectedExpanded;
+    static List<GameObject> opcoes;
+    static List<GameObject> moves;
+    CombatController controller;
+    CombatCharacter character;
+
+    void Start()
+    {
+        currentAction = null;
+        lastFrameDirection = 0;
+        if (opcoes == null)
+        {
+            opcoes = new List<GameObject>(GameObject.FindGameObjectsWithTag("OpcaoCombate"));
+            opcoes.Sort(new HierarchyComparer());
+        }
+        if (moves == null)
+        {
+            moves = new List<GameObject>(GameObject.FindGameObjectsWithTag("StandardMove"));
+            moves.Sort(new HierarchyComparer());
+        }
+        currentlySelected = opcoes.Count - 1;
+        character = gameObject.GetComponent<CombatCharacter>();
+    }
+
+    public override Acao getAction()
+    {
+        controller = GameObject.FindGameObjectWithTag("CombatController").GetComponent<CombatController>();
+        if (currentAction == null)
+        {
+            getNextAction();
+            return null;
+        }
+
+        else if (currentAction.Target.Count == 0)
+        {
+            getActionTarget();
+            return null;
+        }
+
+        else if (currentAction.Place == int.MinValue)
+        {
+            getActionPlace();
+            return null;
+        }
+
+        else
+        {
+            Debug.Log("Place: " + currentAction.Place);
+            return currentAction;
+        }
+    }
+
+    private void getNextAction()
+    {
+        GameObject attack;
+
+        if (hasChangedDirection(Input.GetAxisRaw("Vertical")))
+        {
+            if (!expandedMenu)
+                currentlySelected = (opcoes.Count + currentlySelected + (int)lastFrameDirection) % opcoes.Count;
+            else
+                currentlySelectedExpanded = (moves.Count + currentlySelectedExpanded + (int)lastFrameDirection) % moves.Count;
+        }
+        else if (Input.GetButtonDown("Interact") || Input.GetButtonDown("Jump"))
+        {
+            if (!expandedMenu)
+            {
+                if (currentlySelected == 0)
+                    controller.SendMessage("endCombat", false);
+                else if (currentlySelected == 1)
+                {
+                    //Empty Action
+                    attack = Instantiate(new GameObject());
+                    currentAction = attack.AddComponent<Acao>();
+                    currentAction.Target = new List<GameObject> { gameObject };
+                    currentAction.Place = 0;
+                    attack.transform.parent = gameObject.transform;
+                    currentAction.Sender = gameObject;
+                }
+                else if (currentlySelected == 3)
+                {
+                    expandedMenu = true;
+                    opcoes[currentlySelected].BroadcastMessage("expanded", true);
+                    if (character.light2 != null)
+                    currentlySelectedExpanded = 0;
+                }
+            }
+        }
+        else if (Input.GetButtonDown("Cancel") && expandedMenu)
+        {
+            expandedMenu = false;
+            opcoes[currentlySelected].BroadcastMessage("expanded", false);
+            //preencher os espaços com golpes
+        }
+        for (int i = 0; i < opcoes.Count; i++)
+            opcoes[i].BroadcastMessage("selected", i == currentlySelected);
+
+        if (expandedMenu)
+            for (int i = 0; i < moves.Count; i++)
+            {
+                moves[i].SendMessage("selected", i == currentlySelectedExpanded);
+            }
+
+        /*
+        CombatCharacter character = gameObject.GetComponent<CombatCharacter>();
+        GameObject attack = character.getAttack();
+        if (attack != null)
+        {
+            currentAction = attack.AddComponent<Acao>();
+            attack.transform.parent = gameObject.transform;
+            currentAction.Sender = gameObject;
+        }
+
+        if (currentAction != null)
+            Debug.Log("Selected attack: " + currentAction);
+        */
+    }
+
+    private void getActionTarget()
+    {
+        AcaoTargets properties = gameObject.GetComponentInChildren<AcaoTargets>();
+        currentAction.Target = properties.setTarget();
+        if (currentAction.Target.Count > 0)
+        {
+            foreach (GameObject target in currentAction.Target)
+                Debug.Log("Target: " + target);
+        }
+    }
+
+    private void getActionPlace()
+    {
+        AcaoPlace place = gameObject.GetComponentInChildren<AcaoPlace>();
+        currentAction.Place = place.setPlace();
+    }
+
+    public override void resetAction()
+    {
+        currentlySelected = opcoes.Count - 1;
+        base.resetAction();
+    }
+
+    bool hasChangedDirection(float input)
+    {
+        if (Math.Sign(input) == lastFrameDirection)
+        {
+            return false;
+        }
+        else
+        {
+            lastFrameDirection = Math.Sign(input);
+            return true;
+        }
+    }
+}
