@@ -1,0 +1,6 @@
+*.meta
+*.info
+*.log
+*.dwlt
+*.dll
+Library/metadata/
