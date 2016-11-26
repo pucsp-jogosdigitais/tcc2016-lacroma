@@ -4,3 +4,4 @@
 *.dwlt
 *.dll
 Library/metadata/
+*.bin
