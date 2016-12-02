@@ -1,0 +1,14 @@
+﻿##Atores:
+##Iris
+##Rebelde_Vermelho
+
+
+$--enterLeft.Iris
+$--speak.Iris
+$Eu vi vocês lutando em Gris. Você é forte.
+
+$--enterRight.Rebelde
+$--speak.Rebelde
+$A minha tribo é a mais forte! Vamos continuar firmes, e repintar o mundo!
+
+$--endDialog

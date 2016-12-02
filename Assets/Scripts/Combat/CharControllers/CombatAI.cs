@@ -22,12 +22,6 @@ public abstract class CombatAI : CombatCharacterController
 
     public override Acao getAction()
     {
-        /*if (controller == null)
-            controller = GameObject.FindGameObjectWithTag("CombatController").GetComponent<CombatController>();
-        if (moves == null)
-            moves = gameObject.GetComponent<CombatCharacter>().moves;
-        if (character == null)
-            character = gameObject.GetComponent<CombatCharacter>();*/
         if (!getNextState())
         {
             if (currentAction == null)
@@ -49,12 +43,6 @@ public abstract class CombatAI : CombatCharacterController
             }
             else
                 return currentAction;
-
-            /*GameObject nextAttack = getNextAction(moves, controller);
-            currentAction = nextAttack.GetComponent<Acao>();
-            currentAction.transform.parent = gameObject.transform;
-            currentAction.Sender = gameObject;
-            return currentAction;*/
         }
         return null;
     }

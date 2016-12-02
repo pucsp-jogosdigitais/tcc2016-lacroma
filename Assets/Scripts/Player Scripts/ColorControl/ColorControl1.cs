@@ -6,7 +6,7 @@ using System.Runtime.Remoting.Channels;
 public class ColorControl1 : MonoBehaviour {
 
 	#region variables
-	double currentColor;
+	public double currentColor;
 	#endregion
 
 	#region events

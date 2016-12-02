@@ -122,7 +122,7 @@ public class PlayerCombatController : CombatCharacterController
             {
                 controller = GameObject.FindGameObjectWithTag("CombatController").GetComponent<CombatController>();
                 if (currentlySelected == 0)
-                    controller.SendMessage("endCombat", false);
+                    controller.SendMessage("endCombat", true);
                 else if (currentlySelected == 1)
                 {
                     //Empty Action

@@ -1,0 +1,14 @@
+﻿##Atores:
+##Iris
+##Sprite_Amarelo
+
+
+$--enterLeft.Iris
+$--speak.Iris
+$
+Leila, é você? O que aconteceu? porque você está colorida?
+$--enterRight.Leila
+$--speak.Leila
+$
+Princesa, oi cara de boi
+$--endDialog

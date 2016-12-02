@@ -1,0 +1,11 @@
+﻿##Atores:
+##Jurupari
+
+$--enterLeft.Iris
+$--enterRight.Jurupari
+
+$--speak.Jurupari
+$Oi! Que bom ver você aqui outra vez!
+$Oh, desculpe. Estava te confundindo com outra pessoa.
+Eu venho de um lugar bem longe. Mas esta festa é famosa além das dimensões!
+$--endDialog

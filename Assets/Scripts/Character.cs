@@ -46,6 +46,8 @@ public class Character : MonoBehaviour {
 
     public void setSaturation(float percentage)
     {
+        if (IrisSpriteRenderers == null)
+            IrisSpriteRenderers = getAllRenderers(gameObject.transform);
         foreach (SpriteRenderer renderer in IrisSpriteRenderers)
         {
             Material mat = renderer.material;
@@ -64,7 +66,6 @@ public class Character : MonoBehaviour {
 
         return result;
     }
-
 }
 
 public class HpChangeArgs : EventArgs

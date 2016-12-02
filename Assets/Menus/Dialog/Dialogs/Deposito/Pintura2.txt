@@ -1,0 +1,15 @@
+﻿##Atores:
+#Iris
+
+$--enterLeft.Iris
+$--speak.Iris
+$É mesmo muito bonito...
+$>>Iris.emote.surprised
+$O prisma esta brilhando! O que está acontecendo com a pintura?
+$>>Iris.emote.joyful
+$Uau, isso é demais! Mal posso esperar pra ver o que isso vai fazer com meus desenhos, eu devolvo assim que testar
+$>>Iris.emote.standard
+$Mas é melhor eu ir antes que alguém chegue
+
+
+$--endDialog

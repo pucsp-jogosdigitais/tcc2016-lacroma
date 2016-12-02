@@ -1,0 +1,16 @@
+﻿##Atores:
+##Sprite_Limao
+##Sprite_Laranja
+
+
+$--enterLeft.Sprite_Laranja
+$--speak.Sprite_Laranja
+$Oh, os temas de batalha eram tão mais legais na época de nosso campeão...
+
+$--enterRight.Sprite_Limao
+$--speak.Sprite_Limao
+$Tá louco? Aquelas trombetas sempre me assustavam!
+
+$--speak.Sprite_Laranja
+$Você nunca estava pronto pra isso.
+$--endDialog

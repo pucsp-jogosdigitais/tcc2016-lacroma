@@ -1,0 +1,64 @@
+﻿##Atores:
+##Iris
+##Matiz
+##Guarda
+
+$--enterLeft.Iris
+$--enterRight.Ma'Tiz
+$--speak.Ma'Tiz
+$>>Iris.emote.joyful
+$>>Ma'Tiz.emote.joyful
+$Yahooo! Estou livre e colorido outra vez! Obrigado Milady, serei eternamente grato por salvar minhas penas!
+
+$--speak.Iris
+$De nada, Ma'Tiz. Você me ajudou com os esqueletos.
+
+$--enterRight.Guarda
+$>>Iris.emote.annoyed
+$--speak.Guarda
+$Estou me sentindo tão...calmo. 
+
+$--speak.Iris
+$Espero ter aprendido sua lição, seu valentão.
+
+$--enterRight.Ma'Tiz
+$--speak.Ma'Tiz
+$>>Iris.emote.joyful
+$>>Ma'Tiz.emote.joyful
+$Bom Milady, acho que é melhor eu ir tomando meu caminho, antes que me peguem de novo.
+
+$--speak.Iris
+$Ei, pra onde você vai?
+
+$--speak.Ma'Tiz
+$Estou indo para La Croma! Preciso encontrar com meus aliados, é urgente!
+
+$--speak.Iris
+$>>Iris.emote.surprised
+$Mais gente colorida que nem você?
+
+$--speak.Ma'Tiz
+$Tem muito mais de onde vieram estes tons. Eles são gente boa, iam gostar de te conhecer. Você é uma artista nata!
+$Mas eu já disse muito, tenho de ir. Tchau!
+
+$--enterRight.Guarda
+$--speak.Guarda
+$Milady, você devia voltar para casa. Vossa majestade deve estar preocupada.
+
+$--speak.Iris
+$Hm...
+
+$--speak.Guarda
+$Por algum motivo não me sinto no dever de te obrigar. Mas pense nisso.
+
+$--speak.Iris
+$>>Iris.emote.annoyed
+$Eu não sei se deveria mas...
+$Eu não vou demorar, só vou ali e já volto...
+$--exitRight
+
+$--speak.Iris
+$>>Iris.emote.joyful
+$Ma'Tiz, espera aí! Não me deixa para trás!
+
+$--endDialog

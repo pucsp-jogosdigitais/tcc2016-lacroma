@@ -1,0 +1,10 @@
+﻿##Atores:
+##Iris
+
+$--enterLeft.Iris
+$>>Iris.emote.surprised
+$--speak.Iris
+$
+Esses devem ser os rebeldes que meu pai andava reclamando!
+Eles são muito menos monstruosos de perto...
+$--endDialog

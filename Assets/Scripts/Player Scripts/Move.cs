@@ -53,7 +53,7 @@ public class Move : MonoBehaviour {
 
             if (Mathf.Abs(hit.normal.x) > 0)
             {
-                if(Math.Sign(move) != Math.Sign(hit.normal.x) && move != 0)
+                if (Math.Sign(move) != Math.Sign(hit.normal.x) && move != 0)
                     rb.AddForce(move * slopeAdjust * new Vector2(hit.normal.y, -hit.normal.x));
                 else if (Mathf.Abs(hit.normal.x) < 5.6 && move == 0)
                     rb.AddForce(-Math.Sign(hit.normal.x) * slopeAdjust * new Vector2(hit.normal.y, -hit.normal.x));

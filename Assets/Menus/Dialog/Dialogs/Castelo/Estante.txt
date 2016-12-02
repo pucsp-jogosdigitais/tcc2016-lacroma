@@ -1,0 +1,8 @@
+﻿##Atores:
+##Iris
+
+$--enterLeft.Iris
+$--speak.Iris
+$
+Meu pai vive colocando livros de história novos... Mas eu ainda prefiro as histórias da Leila.
+$--endDialog

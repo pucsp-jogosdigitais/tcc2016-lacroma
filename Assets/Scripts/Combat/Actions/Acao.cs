@@ -5,6 +5,8 @@ using System;
 
 public class Acao : MonoBehaviour {
 
+    public string acaoName = "";
+
     private static readonly ColorRef[] COLOR_REFENCE = {
         new ColorRef(0, 1),
         new ColorRef(230.0f, 1.2f),
@@ -41,6 +43,7 @@ public class Acao : MonoBehaviour {
     private GameObject sender;
     public GameObject Sender{ get { return sender; } set { sender = value; } }
     public List<GameObject> target = new List<GameObject>();
+    public bool interrupted = false;
 
     #region Ended
     private bool ended;
@@ -76,7 +79,7 @@ public class Acao : MonoBehaviour {
 
         applyEffects();
         started = true;
-        Sender.BroadcastMessage("animateAttack", name);
+        Sender.BroadcastMessage("animateAttack", acaoName);
         hitCounter = 0;
         //ended = true; // placeHolderCode
     }
@@ -96,20 +99,27 @@ public class Acao : MonoBehaviour {
             ended = true;
     }
 
+    private void end()
+    {
+        ended = true;
+    }
+
     private void applyEffects()
     {
-        ActionEffects[] effects = gameObject.GetComponents<ActionEffects>();
-        foreach (ActionEffects effect in effects)
+        foreach (ActionEffects effect in gameObject.GetComponents<ActionEffects>())
         {
-            effect.earlyExecute(sender, target);
+            if(!interrupted)
+                effect.earlyExecute(sender, target);
         }
-        foreach (ActionEffects effect in effects)
+        foreach (ActionEffects effect in gameObject.GetComponents<ActionEffects>())
         {
-            effect.standardExecute(sender, target);
+            if (!interrupted)
+                effect.standardExecute(sender, target);
         }
-        foreach (ActionEffects effect in effects)
+        foreach (ActionEffects effect in gameObject.GetComponents<ActionEffects>())
         {
-            effect.lateExecute(sender, target);
+            if (!interrupted)
+                effect.lateExecute(sender, target);
         }
     }
 

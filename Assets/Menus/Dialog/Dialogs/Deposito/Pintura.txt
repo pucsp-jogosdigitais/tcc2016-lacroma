@@ -1,0 +1,7 @@
+﻿##Atores:
+#Iris
+
+$--enterLeft.Iris
+$--speak.Iris
+$Que lindo quadro. Quem será que o pintou?
+$--endDialog

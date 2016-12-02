@@ -1,0 +1,33 @@
+﻿##Atores:
+##Iris
+##Matiz
+
+$--enterLeft.Iris
+$--enterRight.Ma'Tiz
+$--speak.Ma'Tiz
+$>>Iris.emote.happy
+$>>Ma'Tiz.emote.happy
+$Wow Milady, você está diferente. Está radiante, se me permite!
+
+$--speak.Iris
+$Eu acho que deixei cair um pouco de tinta por aí, hehe.
+
+$--speak.Ma'Tiz
+$Oh, é isso aí. Bem vinda a La Croma! Nossa incrível festa itinerante que não tem hora para acabar!
+
+$--speak.Iris
+$É tudo tão bonito por aqui, a música é empolgante também.
+
+$--speak.Ma'Tiz
+$>>Iris.emote.happy
+$Esse aqui é um lugar seguro, sem aquelas coisas cinza para nos atrapalhar. Pode ficar à vontade.
+$Ah, esqueci de te dizer. Tem uma amiga sua te esperando por aqui, quando tiver terminado de brincar, dê um oi pra ela.
+
+$--speak.Iris
+$>>Iris.emote.surprised
+$Minha amiga? Quem?
+
+$--speak.Ma'Tiz
+$Hahaha, surpresa! Ou pelo menos ela insistiu que eu não dissesse. Vá ver por si mesma!
+
+$--endDialog

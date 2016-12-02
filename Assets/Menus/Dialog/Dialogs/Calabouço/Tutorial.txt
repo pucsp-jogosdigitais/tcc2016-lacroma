@@ -1,0 +1,19 @@
+##Atores:
+##Iris
+
+$--enterLeft.Iris
+$--speak.Iris
+$>>Iris.emote.surprised
+$Uau! Que queda! Como eu sobrevivi a isso?!
+$>>Iris.emote.standard
+$Eu vim descendo tão devagar...
+$Parece que parte da magia do prisma grudou em mim, dá pra ver ela na minha pele e no meu cabelo.
+
+$--speak.none
+$--exitLeft
+$Comandos:
+A/Seta para Cima - Pular
+Espaço/X - Interagir
+Nº 1-4/Analógico Direito - Mudar Cores
+
+$--endDialog

@@ -1,0 +1,14 @@
+﻿##Atores:
+##Ma'Tiz
+##Sprite_Azul
+
+
+$--enterLeft.Sprite_Azul
+$--speak.Sprite_Azul
+$Vai lá Ma'Tiz, coloca mais uma pena por um dos buracos da minha máscara. Eu duvido.
+EU DUVIDO DUPLAMENTE.
+
+$--enterRight.Ma'Tiz
+$--speak.Ma'Tiz
+$Já pedi desculpas, foi uma aposta com o cara vermelho ali!
+$--endDialog

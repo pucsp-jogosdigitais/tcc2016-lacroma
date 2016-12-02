@@ -1,0 +1,8 @@
+﻿##Atores:
+
+$--trigger.trigger
+$--enterLeft.Iris
+$--speak.Iris
+$Más o que foi isso? Acho melhor voltar para meu quarto logo.
+
+$--endDialog

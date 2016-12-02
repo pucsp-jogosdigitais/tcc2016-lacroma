@@ -1,0 +1,6 @@
+﻿##Atores:
+##Bau
+
+$Tumulos Suspensos.
+
+$--endDialog

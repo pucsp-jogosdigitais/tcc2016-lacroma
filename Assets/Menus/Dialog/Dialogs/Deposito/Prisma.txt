@@ -1,0 +1,13 @@
+﻿##Atores:
+
+
+$--enterLeft.Iris
+$--speak.Iris
+$>>Iris.emote.surprised
+$Isso é tão lindo! E se eu...
+$>>Iris.emote.joyful
+$É um objeto mágico! Um prisma que controla magia!
+$>>Iris.emote.standard
+$Eu sei que eu não devia... mas... eu vou ter cuidado e com certeza não haverá qualquer problema!
+
+$--endDialog

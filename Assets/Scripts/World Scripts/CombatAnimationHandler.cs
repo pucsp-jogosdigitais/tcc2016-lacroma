@@ -7,7 +7,7 @@ public class CombatAnimationHandler : MonoBehaviour {
 
     private void animateAttack(string name)
     {
-        if (name != "")
+        if (name == "")
             SendMessage("animateOnce", "Attack");
         else
             SendMessage("animateOnce", name);
@@ -22,6 +22,12 @@ public class CombatAnimationHandler : MonoBehaviour {
     {
         hitBy = sender;
         SendMessage("animateOnce", "Damage");
+    }
+
+    private void noDamage()
+    {
+        gameObject.transform.parent.gameObject.BroadcastMessage("end");
+        gameObject.transform.parent.gameObject.BroadcastMessage("setSaturation");
     }
 
     private void damageEnd()

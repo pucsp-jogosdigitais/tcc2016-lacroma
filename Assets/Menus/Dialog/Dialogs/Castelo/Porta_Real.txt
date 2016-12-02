@@ -1,0 +1,18 @@
+﻿##Atores:
+##Iris
+##Guarda
+
+$--enterLeft.Iris
+$--speak.Iris
+$
+Meu pai está ai dentro certo? poderia me deixar entrar?
+
+$--enterRight.Guarda
+$--speak.Guarda
+$
+Desculpe princesa, mas o rei Salvatore disse que ninguem alem do conselho poderia entrar.
+
+$--speak.Iris
+$
+Ah, mais uma daqueles reuniões chatas? Obrigado.
+$--endDialog

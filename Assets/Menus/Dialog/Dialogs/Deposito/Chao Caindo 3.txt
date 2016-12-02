@@ -1,0 +1,10 @@
+﻿##Atores:
+
+
+$--enterLeft.Iris
+$--speak.Iris
+$>>Iris.emote.falling
+$Aaaaaaaaarghhhh!
+
+$--trigger.fall
+$--endDialog

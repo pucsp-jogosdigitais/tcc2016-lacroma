@@ -1,0 +1,10 @@
+﻿##Atores:
+##Sprite_Vermelho
+
+$--enterLeft.Iris
+$--enterRight.Sprite_Vermelho
+$--speak.Sprite_Vermelho
+$Celebramos hoje mas estamos prontos para tudo! Nossas armas não são feitas para ferir.
+Uma vez que pintamos um inimigo, ele é libertado dos grilhões do cinza, e é livre outra vez.
+$Logo, deixamos de ser inimigos.
+$--endDialog

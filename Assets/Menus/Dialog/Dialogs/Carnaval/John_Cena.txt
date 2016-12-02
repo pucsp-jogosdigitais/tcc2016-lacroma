@@ -1,0 +1,9 @@
+﻿##Atores:
+
+
+$
+Estatua de um lutador com a inscrição:
+$Que essa estatua imortalize O Grande Campeão e seus 5 golpes assinatura.
+Nunca foi derrotado
+
+$--endDialog

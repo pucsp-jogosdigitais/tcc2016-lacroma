@@ -1,0 +1,62 @@
+﻿##Atores:
+##Iris
+##Ma'Tiz
+
+$--enterLeft.Iris
+$--speak.Iris
+$Ufa, essa foi por pouco.
+
+$--enterRight.Ma'Tiz
+$--speak.Ma'Tiz
+$Uau! Isso foi demais! Você tem talento com pintura!
+
+$--speak.Iris
+$>>Iris.emote.angry
+$E você ficou aí só assistindo e nem me deu uma mão?
+
+$--speak.Ma'Tiz
+$>>Ma'Tiz.emote.joyful
+$Desculpe, estava muito entretido olhando você pintar pra poder dar uma asa. Você viu como ele ficou feliz quando você o coloriu? O poder das cores é incrível, não é mesmo?
+
+$--speak.Iris
+$>>Iris.emote.standard
+$>>Ma'Tiz.emote.standard
+$É muito poderoso... bem que meu pai sempre me disse que era perigoso...
+Mas porque você é assim? Pensei que não sobraram mais de vocês depois da guerra!
+
+$--speak.Ma'Tiz
+$O povo colorido resiste! Eu sou o último dos pássaros de Paradiso, e me recuso a ser acinzentado. Enquanto tiver cor, vai ter luta!
+
+$--speak.Iris
+$E o que vocês querem com isso? O mundo era uma bagunça antes.
+
+$--speak.Ma'Tiz
+$Oh, os cinzas gostam de dizer que as cores são uma bagunça, talvez sejam mesmo. Mas nós queremos poder viver livres, ir e vir como quisermos, apreciar o azul das árvores e o verde dos céus, ou qualquer cor que quisermos.
+$Bom, já conversei demais, devo voltar a meus colegas. E você se cuide, agora que você está pegando uma corzinha não deixe esses mortos vivos te acinzentarem de novo!
+
+$--speak.Iris
+$>>Iris.emote.surprised
+$Ei espera aí, o que eu faço agora?
+
+$--speak.Ma'Tiz
+$Pode ficar com o pincel. Temos mais de onde veio esse. A propósito, como você se chama?
+
+$--speak.Iris
+$>>Iris.emote.standard
+$Meu nome é Íris.
+
+$--speak.Matiz
+$>>Ma'Tiz.emote.surprised
+$Íris? Oh, você é a princesa deste castelo! Desculpe Milady, não estava te tratando como tal!
+
+$--speak.Iris
+$Espera Ma'Tiz, eu, eu estou perdida...acho que quero voltar pra casa
+
+$--speak.Ma'Tiz
+$>>Matiz.emote.standard
+$Bem, fique à vontade, não deve ser muito longe. Eu estou indo para La Croma, meus amigos estão me esperando lá e é um lugar muito mais divertido que esse reino sem graça. Foi um prazer, Milady.
+$--exitRight
+
+$--speak.Iris
+$Ma'Tiz!!
+$--endDialog

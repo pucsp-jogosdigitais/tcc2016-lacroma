@@ -1,0 +1,27 @@
+﻿##Atores:
+##Iris
+##Leila
+
+$--enterLeft.Iris
+$--speak.Iris
+$Leila? O que está acontecendo!?
+
+$--enterRight.Leila
+$--speak.Leila
+$>>Leila.emote.worried
+$Céus! Milady você está bem! Rápido, não há tempo de explicar! Você tem de sair daqui!
+
+$--speak.Iris
+$O quê? Espera, o que foi aquele barulho?
+
+$--speak.Leila
+$Vamos! Entre no depósito! Não saia até eu te chamar!
+
+$--speak.Iris
+$>>Iris.emote.surprised
+$Mas Leila... E meu pai?
+
+$--speak.Leila
+$Seu pai ficará bem lady Íris
+$Agora por favor vá! É pela sua segurança!
+$--endDialog

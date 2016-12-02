@@ -1,0 +1,21 @@
+﻿##Atores:
+##Iris
+##Rebelde_Verde
+
+
+$--enterLeft.Iris
+$--speak.Iris
+$Wow, posso brincar também?
+
+$--enterRight.Rebelde_Verde
+$--speak.Rebelde_Verde
+$Claro, tem tinta em pó para todos os lados em La Croma. Aqui é o local de descanso perfeito quando a rebelião nos permite.
+
+$--speak.Iris
+$O que é essa rebelião?
+
+$--speak.Rebelde_Verde
+$Nós tingimos, eles machucam.. Nós libertamos, eles prendem.. Somos artistas, cada um de sua maneira, com criatividades indomáveis.
+$Tudo é tão sem vida no Reino Cinza.. Lutamos por mais lugares como
+aqui
+$--endDialog

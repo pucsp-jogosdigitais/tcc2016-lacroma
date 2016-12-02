@@ -182,21 +182,21 @@ public class DialogHandler : MonoBehaviour {
         leftActor.BroadcastMessage("lookRight");
     }
 
-    private void exitRight(string actor)
+    private void exitRight()
     {
         if (rightActor != null)
             rightActor.enabledImage(false);
         rightActor = null;
     }
 
-    private void exitLeft(string actor)
+    private void exitLeft()
     {
         if (leftActor != null)
             leftActor.enabledImage(false);
         leftActor = null;
     }
 
-    private void exitCenter(string actor)
+    private void exitCenter()
     {
         if (leftActor != null)
             leftActor.enabledImage(false);
@@ -205,16 +205,29 @@ public class DialogHandler : MonoBehaviour {
 
     private void speak(string actor)
     {
-        Actor characterActor = actorsHash[actor].GetComponent<Actor>();
-        speakerName.text = characterActor.Name;
-        speakerName.color = characterActor.Color;
-        shownText.color = characterActor.Color;
-        foreach(String actorName in actorsHash.Keys)
+        if (actor != "none")
         {
-            if (actorName == actor)
-                actorsHash[actorName].GetComponent<Image>().color = Color.white;
-            else
+            Actor characterActor = actorsHash[actor].GetComponent<Actor>();
+            speakerName.text = characterActor.Name;
+            speakerName.color = characterActor.Color;
+            shownText.color = characterActor.Color;
+            foreach (string actorName in actorsHash.Keys)
+            {
+                if (actorName == actor)
+                    actorsHash[actorName].GetComponent<Image>().color = Color.white;
+                else
+                    actorsHash[actorName].GetComponent<Image>().color = new Color(100, 100, 100);
+            }
+        }
+        else
+        {
+            speakerName.text = "";
+            speakerName.color = Color.black;
+            shownText.color = Color.black;
+            foreach (string actorName in actorsHash.Keys)
+            {
                 actorsHash[actorName].GetComponent<Image>().color = new Color(100, 100, 100);
+            }
         }
     }
 

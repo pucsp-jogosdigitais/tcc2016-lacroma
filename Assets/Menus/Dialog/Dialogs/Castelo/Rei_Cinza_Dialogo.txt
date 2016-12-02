@@ -1,0 +1,39 @@
+##Atores:
+##Salvatore
+##Iris
+##Guarda
+
+$--enterRight.Salvatore
+$--enterLeft.Iris
+$--speak.Salvatore
+$Quer que eu te conte alguma outra história da guerra?
+
+$--speak.Iris
+$Bom... quem sabe...
+
+$--speak.none
+$*toc toc toc*
+$>>Salvatore.emote.angry
+$--speak.Salvatore
+$Vá embora! Estou contando histórias para a minha filha!
+Como ela vai aprender a reinar se suas lições forem interrompidas?!
+
+$>>Guarda.emote.scared
+$--enterLeft.Guarda
+$--speak.Guarda
+$Hum... majestade... mil perdões, mas... Senhor, é uma emergência, o conselho convocou uma reunião.
+
+$>>Salvatore.emote.standard
+$--speak.Salvatore
+$Certo, certo, um rei deve estar sempre preparado. Corra e os informe que estou a caminho.
+
+$--speak.Guarda
+$Imediatamente meu rei!
+
+$--exitLeft
+$--speak.Salvatore
+$Humpf
+$--enterLeft.Iris
+$Íris minha querida, eu preciso ir cuidar disso. Assim que eu puder eu volto para contar mais histórias.
+
+$--endDialog

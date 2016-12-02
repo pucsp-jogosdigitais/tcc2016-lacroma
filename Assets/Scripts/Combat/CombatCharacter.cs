@@ -112,14 +112,24 @@ public class CombatCharacter : MonoBehaviour {
     #region HP
     public int currentHP;
     public int maxHP;
+    public int damageThisTurn;
 
     public void takeDamage(int damage)
     {
         currentHP -= damage;
+        damageThisTurn += damage;
         if (currentHP < 0)
             currentHP = 0;
         if (currentHP <= 0)
             die();
+    }
+
+    public void healDamage(int heal)
+    {
+        currentHP += heal;
+        if (currentHP > maxHP)
+            currentHP = maxHP;
+        BroadcastMessage("currentLife", (float)currentHP / maxHP);
     }
 
     public void setSaturation()
@@ -136,7 +146,7 @@ public class CombatCharacter : MonoBehaviour {
     {
         currentHP += restore;
         if (currentHP > maxHP)
-            currentHP = maxHP;
+            currentHP = maxHP; 
     }
 
     private void getHit(Acao sender)
@@ -188,5 +198,10 @@ public class CombatCharacter : MonoBehaviour {
             result.AddRange(getAllRenderers(child));
 
         return result;
+    }
+
+    public void nextTurn()
+    {
+        damageThisTurn = 0;
     }
 }

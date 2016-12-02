@@ -1,0 +1,9 @@
+##Atores:
+##Sprite_Roxo
+
+$--enterLeft.Iris
+$--enterRight.Sprite_Roxo
+$--speak.Sprite_Roxo
+
+$Não estou atendendo hoje. Estou de folga festejando em La Croma!
+$--endDialog

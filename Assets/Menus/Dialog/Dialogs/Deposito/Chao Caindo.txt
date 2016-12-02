@@ -1,0 +1,8 @@
+﻿##Atores:
+
+
+$--enterLeft.Iris
+$--speak.Iris
+$O que será que está acontecendo lá fora? Estou preocupada com meu pai.
+
+$--endDialog

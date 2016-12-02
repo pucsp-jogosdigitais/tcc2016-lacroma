@@ -1,0 +1,9 @@
+﻿##Atores:
+##Bau
+
+$--enterLeft.Iris
+$--speak.Iris
+$
+Oh não, esqueci a chave no baú do quarto!
+
+$--endDialog

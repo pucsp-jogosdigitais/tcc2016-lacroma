@@ -11,6 +11,7 @@ public class AddInteractable : Response {
     {
         if (target == null)
             target = gameObject;
+        setTriggers();
     }
 
     protected override void triggerResponse(object sender, EventArgs e)

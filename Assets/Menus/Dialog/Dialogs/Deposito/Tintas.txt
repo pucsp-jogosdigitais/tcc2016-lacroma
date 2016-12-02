@@ -1,0 +1,11 @@
+﻿##Atores:
+
+
+$--enterLeft.Iris
+$--speak.Iris
+$"PERIGO!
+Não tocar! Resíduos de cor."
+$>>Iris.emote.surprised
+$De fato há coisas perigosas por aqui.
+
+$--endDialog

@@ -1,0 +1,42 @@
+﻿##Atores:
+##Iris
+##Guarda
+
+$--enterLeft.Iris
+$--speak.Iris
+$>>Iris.emote.surprised
+$Ma'tiz!
+$>>Iris.emote.angry
+$--speak.Iris
+$Vocês são os responsáveis por isso, não é Trigêmeos? 
+
+$--enterRight.Guarda
+$--speak.Guarda
+$Milady, que bom que esta a salvo! Encontramos este rebelde causando confusão por aqui, vou mandar avisar vossa majestade que a encontramos.
+
+$--speak.Iris
+$>>Iris.emote.sad
+$O que vão fazer com ele?
+
+$--speak.Guarda
+$Vai ser preso como os outros arruaceiros. Se não se comportar vai virar frango à passarinho!
+$--speak.Iris
+$Deixem ele ir, ele não fez mal a ninguem.
+
+$--speak.Guarda
+$Vamos, Milady. Vamos te escoltar para o castelo, não se preocupe com esse bicho.
+
+$--speak.Iris
+$>>Iris.emote.angry
+$Não vou voltar antes que voces soltem ele!
+
+$--speak.Guarda
+$>>Guarda.emote.angry
+$Ora, vamos ter que levá-la à força, Milady. Vossa majestade deve estar preocupada.
+
+$--speak.Iris
+$Sai fora, se voces nao vao solta-lo, eu vou!!
+
+$--speak.Guarda
+$Ei gente, ela está armada!
+$--endDialog

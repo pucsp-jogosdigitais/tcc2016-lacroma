@@ -10,6 +10,7 @@ public class Interactable : Trigger {
 
     public override void OnTriggerEnterOrStay2D(Collider2D other){
 		if (Input.GetButtonDown("Interact") && tagName == other.tag) {
+            other.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             if (isSwitch)
             {
                 actualState = !actualState;

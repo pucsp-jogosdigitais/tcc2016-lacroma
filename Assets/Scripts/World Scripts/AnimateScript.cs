@@ -10,7 +10,7 @@ public class AnimateScript : MonoBehaviour {
 		anim = gameObject.GetComponent<Animator> ();
 	}
 
-	void animateStart (String animation){
+	void animateStart (string animation){
 		anim.SetBool(animation, true);
 	}
 

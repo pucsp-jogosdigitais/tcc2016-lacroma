@@ -218,6 +218,7 @@ public class CombatController : MonoBehaviour {
         foreach (GameObject obj in charList)
         {
             obj.GetComponent<CombatCharacterController>().resetAction();
+            obj.GetComponent<CombatCharacter>().nextTurn();
             StatModifier[] charModifiers = obj.GetComponents<StatModifier>();
             foreach (StatModifier modifier in charModifiers)
             {
@@ -263,7 +264,7 @@ public class CombatController : MonoBehaviour {
             Destroy(obj);
         }
 
-        if (won)
+        if (won && starter.gameObject != null)
             Destroy(starter.gameObject);
 
         GameObject iris = GameObject.Find("Iris");

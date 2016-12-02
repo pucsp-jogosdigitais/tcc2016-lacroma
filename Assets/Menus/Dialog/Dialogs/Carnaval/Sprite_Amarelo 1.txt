@@ -1,0 +1,20 @@
+﻿##Atores:
+##Iris
+##Sprite_Amarelo
+
+
+$--enterLeft.Iris
+$--speak.Iris
+$Nossa, vocês são tão legais! O que são vocês?
+
+$--enterRight.Sprite_Amarelo
+$--speak.Sprite_Amarelo
+$Você deve ser nova por aqui, nunca tinha visto um Sprite?
+
+$--speak.Iris
+$E o que são Sprites?
+
+$--speak.Sprite_Amarelo
+$Sprites são... No Reino cinza dizem que somos agentes do caos. Na verdade nós somos os espíritos das cores.
+
+$--endDialog

@@ -1,0 +1,11 @@
+﻿##Atores:
+## Iris
+
+$--enterLeft.Iris
+$--speak.Iris
+$>>Iris.emote.surprised
+$--trigger.cannon
+$Um terremoto?!
+
+
+$--endDialog

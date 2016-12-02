@@ -1,0 +1,17 @@
+﻿##Atores:
+##Iris
+##Sprite_Ciano
+
+$--enterLeft.Iris
+$>>Iris.emote.curious
+$--enterRight.Sprite_Ciano
+$--speak.Sprite_Ciano
+$La Croma está mais animada hoje do que a festa de ontem. Até do que a de anteontem.
+
+$--speak.Iris
+$Uau, tudo aqui é tão animado, onde vocês estiveram a minha vida inteira?
+
+$--speak.Sprite_Ciano
+$Oh se você vem de Gris nunca ia nem ouvir falar daqui. Primeiro que não temos lugar estabelecido nem divulgação.
+$E que nossa magia de sprite permite esconder nossa festa de todos que são cinzas.
+$--endDialog

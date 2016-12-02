@@ -1,0 +1,9 @@
+﻿##Atores:
+##Bau
+
+$--enterLeft.Iris
+$--speak.Iris
+$Meu pai falou que tem coisas perigosas guardadas no depósito... Mas eu prometo que vai ser uma olhada bem rápida.
+Ainda bem que o guarda cochilou no posto e eu consegui esconder a chave aqui.
+
+$--endDialog

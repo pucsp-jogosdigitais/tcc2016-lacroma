@@ -41,7 +41,12 @@ public abstract class MonoChroma : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        OnTriggerEnterOrStay2D(other);
+        triggerIn = true;
+        currentCollider = other;
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
         triggerIn = true;
         currentCollider = other;
     }

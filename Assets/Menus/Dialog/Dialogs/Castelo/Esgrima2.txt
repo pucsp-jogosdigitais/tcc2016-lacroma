@@ -1,0 +1,8 @@
+##Atores:
+##Iris
+
+$--enterLeft.Iris
+$--speak.Iris
+$
+Não se preocupe Álvaro, é só um arranhão
+$--endDialog

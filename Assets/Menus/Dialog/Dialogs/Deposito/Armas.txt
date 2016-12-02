@@ -1,0 +1,10 @@
+﻿##Atores:
+
+
+$--enterLeft.Iris
+$--speak.Iris
+$Que armas são essas?
+$>>Iris.emote.surprised
+$Pera aí.. isso são pincéis?
+
+$--endDialog

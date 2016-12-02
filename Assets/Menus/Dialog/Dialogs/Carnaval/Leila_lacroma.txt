@@ -1,0 +1,39 @@
+﻿##Atores:
+##Iris
+##Leila
+
+$--enterLeft.Iris
+$--enterRight.Leila
+$--speak.Iris
+$>>Iris.emote.happy
+$>>Leila.emote.standard
+$Leila é você? Nossa, você está linda!
+
+$--speak.Leila
+$Hora de mostrar minhas verdadeiras cores, que tal?
+$Como é bom ver você segura e tão bonita, Milady. Sabia que Ma'Tiz seria um bom guia.
+
+$--speak.Iris
+$>>Iris.emote.surprised
+$Guia? Eu já não estou entendendo mais nada!
+
+$--speak.Leila
+$Calma, Milady. Com um pouco de tempo tudo vai fazer sentido.
+
+$--speak.Iris
+$>>Iris.emote.sad
+$Você é uma rebelde, não é?
+
+$--speak.Leila
+$>>Iris.emote.surprised
+$E você é tão mais do que imagina, Milady. Antes eu duvidava, mas vendo você assim, agora tenho certeza.
+
+$--speak.Iris
+$Do que está falando?
+
+$--speak.Leila
+$Vai ser como sempre foi quando estávamos no castelo, e você custava para dormir...
+$Sente-se. Vou te contar uma história.
+
+$--trigger.Video
+$--endDialog

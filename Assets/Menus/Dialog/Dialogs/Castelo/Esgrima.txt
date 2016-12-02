@@ -1,0 +1,8 @@
+﻿##Atores:
+##Iris
+
+$--enterLeft.Iris
+$--speak.Iris
+$
+Pobre Álvaro... Acho que fui dura com ele demais nos ultimos treinos, até perdeu um braço.
+$--endDialog

@@ -1,0 +1,46 @@
+﻿##Atores:
+##Iris
+##Ma'Tiz
+##Esqueleto
+
+$--enterLeft.Iris
+$--speak.Iris
+$Uh oh.
+
+$--enterRight.Esqueleto
+$--speak.Esqueleto
+$*Soluço*
+
+$--enterRight.Ma'Tiz
+$--speak.Ma'Tiz
+$Você parece estar em apuros, donzela!
+
+$--speak.Iris
+$>>Iris.emote.surprised
+$Quem é você? Você é...colorido!
+
+$--speak.Ma'Tiz
+$>>Ma'Tiz.emote.joyful
+$Sim, e com muito orgulho! Meu nome é Ma'Tiz e tenho todas as cores que seus olhos podem ver!
+
+$--enterRight.Ma'Tiz
+$--speak.Ma'Tiz
+$>>Ma'Tiz.emote.standard
+$>>Iris.emote.standard
+$E você não é tão cinza, garota. Vamos impedir esses velhos ossos de mudarem isso, sim?
+$Toma aqui! Use isso pra se defender!
+$Rápido! Cuidado, ou esses monstros vão te acinzentar!
+
+$--enterRight.Esqueleto
+$--speak.Esqueleto
+$*Ossos batendo*
+
+$--speak.Iris
+$Ei, espera, eu nunca usei isso, me ajuda aqui!
+
+$--enterRight.Esqueleto
+$--speak.Esqueleto
+$*Wrergh!*
+ 
+$--trigger.combate
+$--endDialog

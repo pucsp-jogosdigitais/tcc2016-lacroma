@@ -11,6 +11,7 @@ public class ToggleScript : Response {
 
     protected override void triggerResponse(object sender, EventArgs e)
     {
+        Debug.Log("Toggle: " + activate);
         foreach(MonoBehaviour script in scripts)
             script.enabled = activate;
     }

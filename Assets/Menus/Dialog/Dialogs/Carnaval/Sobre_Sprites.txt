@@ -1,0 +1,33 @@
+﻿##Atores:
+##Iris
+##Sprite_Verde
+##Ma'Tiz
+
+
+$--enterLeft.Iris
+$--speak.Iris
+$Nossa, vocês são tão legais! O que são vocês?
+
+$--enterRight.Sprite_Verde
+$--speak.Sprite_Verde
+$Você deve ser nova por aqui, eu sou eu, com prazer.
+
+$--speak.Iris
+$Não mas, o que você é?
+
+$--speak.Sprite_Verde
+$Somos os sprites.
+
+$--speak.Iris
+$E o que vocês fazem?
+
+$--speak.Sprite_Verde
+$Flutuo por aí. Danço bastante. Sei cozinhar.
+
+$--exit.Right
+$--enterRight.Ma'Tiz
+$--speak.Ma'Tiz
+$Ele vai ficar brincando com você, Milady. Os sprites são desse jeito.
+Sprites são os espíritos das cores, manifestações físicas do que cada cor representa.
+A maioria tem sarcasmo de sobra, haha!
+$--endDialog

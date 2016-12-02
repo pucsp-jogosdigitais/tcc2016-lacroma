@@ -1,0 +1,9 @@
+﻿##Atores:
+##Iris
+
+$--enterLeft.Iris
+$--speak.Iris
+$
+Ando desenhando bastante ultimamente. Ainda acho que tem algo faltando neles...
+
+$--endDialog
